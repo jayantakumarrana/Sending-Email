@@ -24,9 +24,7 @@ public class SpringBootSendEmailApplication {
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMail() throws MessagingException {
 		emailSenderervice.sendMail
-		("sanjeevsingh07534@gmail.com","Hello sir, greetings of the day Please find the attached copy of my resume below."
-				+ "Regards "
-				+ "Jay Rana",
+		("sanjeevsingh07534@gmail.com","Hello sir, greetings of the day Please find the attached copy of my resume below.",
 				"Jay Rana Resume","D:\\Program image\\proxyRsm.pdf");
 
 	}
